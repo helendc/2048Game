@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="GameController.js" type="module"></script>
+        <script src="engine/game.js" type="module"></script>
+
+        <title>2048 Game</title>
+
+    </head>
+    <body>
+        <div id="root"></div>
+        <div style='background-color:lightblue' id="game">
+        <h1 id="title">2048 GAME</h1>
+        <p>Use the Arrow Keys to move tiles around the board. Combine like numbers and try to get 2048!</p>
+        <table margin="auto" id="board" width= "90%" rules="all" style="border: 1px solid black; background-color:bisque;">
+            <tr id="row0" class="is-parent">
+                <td class="tile" id="00" style="text-align:center">0</td>
+                <td class="tile" id="01" style="text-align:center">0</td>
+                <td class="tile" id="02" style="text-align:center">0</td>
+                <td class="tile" id="03" style="text-align:center">0</td>
+            </tr>
+            <tr id="row1" class="is-parent">
+                <td class="tile" id="10" style="text-align:center">0</td>
+                <td class="tile" id="11" style="text-align:center">0</td>
+                <td class="tile" id="12" style="text-align:center">0</td>
+                <td class="tile" id="13" style="text-align:center">0</td>
+            </tr>
+            <tr id="row2" class="is-parent">
+                <td class="tile" id="20" style="text-align:center">0</td>
+                <td class="tile" id="21" style="text-align:center">0</td>
+                <td class="tile" id="22" style="text-align:center">0</td>
+                <td class="tile" id="23" style="text-align:center">0</td>
+            </tr>
+            <tr id="row3" class="is-parent">
+                <td class="tile" id="30" style="text-align:center">0</td>
+                <td class="tile" id="31" style="text-align:center">0</td>
+                <td class="tile" id="32" style="text-align:center">0</td>
+                <td class="tile" id="33" style="text-align:center">0</td>
+            </tr>
+        </table>
+        <button class='reset' id='reset'>Reset</button>
+            <label for="score">Score: </label>
+            <input type="number" id="score" name="score" readonly value=0>
+            <label for="status">Status: </label>
+            <input type="text" id="status" name="status" readonly value='Playing'>
+    </body>
+
+</html>
